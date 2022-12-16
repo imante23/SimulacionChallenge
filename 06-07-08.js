@@ -11,7 +11,18 @@ function crearClasePersona() {
       // Inicializar las propiedades de la persona con los valores recibidos como argumento
 
       // Tu código aca:
-
+    this.nombre=nombre;
+    this.edad=edad;
+    this.hobbies=hobbies;
+    this.amigos=amigos;
+    this.detalle=function(){
+      return{
+        Nombre:this.nombre,
+        Edad:this.edad,
+        Hobbies:this.hobbies,
+        Amigos:this.amigos
+      }
+    }
     }
 
     addFriend(nombre, edad) {
@@ -20,7 +31,7 @@ function crearClasePersona() {
       // No debe retornar nada.
 
       // Tu código aca:
-
+      cb (nombre,edad);
     }
 
     addHobby(hobby) {
@@ -28,7 +39,12 @@ function crearClasePersona() {
       // No debe retornar nada.
 
       // Tu código aca:
+Persona.prototype.hobbies=function(){
+  
+}
+push(hobby)
 
+}
     }
     getFriends() {
       // El método 'getFriends' debe retornar un arreglo con sólo los nombres del arreglo de amigos
